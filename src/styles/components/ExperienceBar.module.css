@@ -1,0 +1,28 @@
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+    font-size: 1rem;
+}
+.experienceBar > div {     /* O sinal > significa que vai pegar a primeira div e não as demais */
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.experienceBar > div > div {       /* Nesse caso vai pegar somente a div que está dentro da primeira div */
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+}
+
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%)
+}
